@@ -22,7 +22,7 @@ const navbar = (
 
 const search = <Search placeholder="Search the documents..." />;
 
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
+const footer = <Footer>MIT {new Date().getFullYear()} © Walsh.</Footer>;
 
 export default async function RootLayout({
   children,
