@@ -1,0 +1,121 @@
+---
+title: "Developer Hub"
+description: "Developer Hub: Home, Tools, Services, Design Library, API, Paid & Free Services"
+---
+
+# Welcome to Developer Hub 🚀
+
+A clean collection of **developer tools, home, learning, design libraries, regular services, paid & free services, and API integration examples** — all in one place.
+
+---
+
+## 🛠 Regular Services
+
+We provide smooth and fast service for every customer without hassle.
+
+- ✔ Computer servicing & troubleshooting
+- ✔ Software installation & setup
+- ✔ Website support & small fixes
+- ✔ Front-end development help
+- ✔ Documentation support using **Nextra**
+
+---
+
+## 💰 Paid Services
+
+We provide both **Cash** and **Card** payment options for all paid services.
+
+| Service                   | Description                         | Price  |
+| ------------------------- | ----------------------------------- | ------ |
+| Full PC Check-up          | Complete system check & diagnostics | $20    |
+| OS Installation           | Windows/Linux/macOS installation    | $30    |
+| Virus & Malware Removal   | Clean system from viruses & malware | $25    |
+| Data Backup & Recovery    | Backup or recover important files   | $35    |
+| Hardware Upgrade          | SSD/HDD, RAM upgrade                | $40    |
+| Laptop/PC Troubleshooting | Fix technical issues                | $25    |
+| API Development           | REST/GraphQL API creation           | $50/hr |
+| API Integration           | Third-party API integration         | $40/hr |
+| API Documentation         | Full professional API docs          | $25    |
+
+---
+
+## 🎁 Free Services
+
+Special free services are available for **repeat customers**:
+
+- Basic device check-up
+- Small software installation
+- Data transfer assistance
+- Guidance & technical tips
+- Free tutorials support
+
+---
+
+## 💻 Developer Tools
+
+Useful tools to boost your developer productivity.
+
+- **VS Code Extensions** — Productivity boosters
+- **Git & GitHub Workflow** — Smart version control practices
+- **Terminal Tools** — oh-my-zsh, pnpm, nvm, custom aliases
+- **Browser DevTools** — Performance audit tools
+- **API Testing Tools** — Postman, Hoppscotch
+
+---
+
+## 📘 Learning
+
+- [Build Your Own X](https://github.com/pmmasud111) — Learn by creating real technologies from scratch
+- FreeCodeCamp Roadmaps
+- JavaScript & TypeScript Documentation
+- React & Next.js Official Guides
+
+---
+
+## 📚 Useful Articles
+
+- [CSR vs SSR vs ISR — Deep Dive](https://dev.to/yugjadvani/csr-vs-ssr-vs-ssg-vs-isr-a-deep-dive-for-modern-web-development-33kl)
+- Web Performance Best Practices
+- REST vs GraphQL Comparison
+
+---
+
+## 🎨 Design Library
+
+### UI Libraries
+
+- **[Material UI](https://material-ui.com/):** Modern React components following Google Material Design
+- **[shadcn/ui](https://ui.shadcn-ui.com/):** Headless UI components with full customization
+- Tailwind CSS Components — Pre-built layouts & utility classes
+- Radix UI — Accessible, unstyled UI primitives
+
+### Design Inspiration
+
+- Color Palette Generator
+- UI Inspiration from Dribbble & Behance
+- Modern Layout Patterns
+
+---
+
+## 🧱 API & Code Snippets
+
+### REST API using Express.js
+
+```javascript copy
+const express = require("express");
+const app = express();
+const PORT = 5000;
+
+app.use(express.json());
+
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello from API!" });
+});
+
+app.post("/api/data", (req, res) => {
+  const { name } = req.body;
+  res.json({ message: `Hello, ${name}` });
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```

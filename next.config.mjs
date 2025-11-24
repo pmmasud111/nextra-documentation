@@ -8,5 +8,15 @@ const withNextra = nextra({
 // Export the final Next.js config with Nextra included
 export default withNextra({
   reactStrictMode: true,
+
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ];
+  },
   // ... Add regular Next.js options here
 });
