@@ -1,9 +1,14 @@
 import { Footer, Layout, Navbar } from "nextra-theme-docs";
+<<<<<<< HEAD
 import { Banner, Head } from "nextra/components";
+=======
+import { Banner, Head, Search } from "nextra/components";
+>>>>>>> c08bdbe7842b013e97483538583823bdfd7fa2e0
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 
 export const metadata = {
+<<<<<<< HEAD
   // Define your metadata here
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
 };
@@ -16,6 +21,27 @@ const navbar = (
   />
 );
 const footer = <Footer>MIT {new Date().getFullYear()} © Walsh.</Footer>;
+=======
+  title: "Walsh Integrated Documentation",
+  description: "Walsh Integrated Documentation",
+};
+
+const banner = (
+  <Banner storageKey="some-key">Walsh Integrated 1.0.0 Relesd</Banner>
+);
+const navbar = (
+  <Navbar
+    logo={<b>Walsh</b>}
+    logoLink="/home"
+    projectLink="https://github.com/pmmasud111/nextra-documentation/"
+    chatLink="https://discord.com/login"
+  />
+);
+
+const search = <Search placeholder="Search the documents..." />;
+
+const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
+>>>>>>> c08bdbe7842b013e97483538583823bdfd7fa2e0
 
 export default async function RootLayout({
   children,
@@ -40,6 +66,7 @@ export default async function RootLayout({
         <Layout
           banner={banner}
           navbar={navbar}
+<<<<<<< HEAD
           themeSwitch={{
             dark: "Темный",
             light: "Светлый",
@@ -49,6 +76,14 @@ export default async function RootLayout({
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
           footer={footer}
+=======
+          pageMap={await getPageMap()}
+          docsRepositoryBase="https://github.com/pmmasud111/nextra-documentation/"
+          footer={footer}
+          search={search}
+          feedback={{ content: null }}
+          editLink={null}
+>>>>>>> c08bdbe7842b013e97483538583823bdfd7fa2e0
           // ... Your additional layout options
         >
           {children}
