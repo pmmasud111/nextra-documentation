@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
-
-// export default nextConfig;
-
-=======
->>>>>>> c08bdbe7842b013e97483538583823bdfd7fa2e0
 import nextra from "nextra";
 
 // Set up Nextra with its configuration
@@ -18,8 +7,6 @@ const withNextra = nextra({
 
 // Export the final Next.js config with Nextra included
 export default withNextra({
-<<<<<<< HEAD
-=======
   reactStrictMode: true,
 
   async redirects() {
@@ -31,6 +18,5 @@ export default withNextra({
       },
     ];
   },
->>>>>>> c08bdbe7842b013e97483538583823bdfd7fa2e0
   // ... Add regular Next.js options here
 });
