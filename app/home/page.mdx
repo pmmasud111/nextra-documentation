@@ -1,121 +1,60 @@
 ---
-title: "Walsh API Services"
-description: "Walsh Developer Hub: API Documentation, Endpoint Guide, Auth Setup, Request/Response Examples, SDKs, Debug Tools, and Free/Public API Services."
+title: "Walsh Integrated Developer & Client Hub"
+description: "Official documentation, roles, product guides, API reference, and support resources for Walsh Integrated."
 ---
 
-# Welcome to Developer Hub 🚀
+# ✨ Walsh Integrated Developer & Client Hub
 
-A clean collection of **developer tools, home, learning, design libraries, regular services, paid & free services, and API integration examples** — all in one place.
+Welcome to the official documentation and resource center for **Walsh Integrated**, the leader in automating quality and safety management for healthcare and hospitality since **1992**.
 
----
-
-## 🛠 Regular Services
-
-We provide smooth and fast service for every customer without hassle.
-
-- ✔ Computer servicing & troubleshooting
-- ✔ Software installation & setup
-- ✔ Website support & small fixes
-- ✔ Front-end development help
-- ✔ Documentation support using **Nextra**
+Our mission is to provide the tools, training, and support necessary to automate your quality and performance tasks—giving you the time and insight to focus on real improvement.
 
 ---
 
-## 💰 Paid Services
+## 🚀 Get Started: Roles and Access
 
-We provide both **Cash** and **Card** payment options for all paid services.
+Our platform is designed to streamline workflow across various user types. Select your role below to navigate directly to relevant documentation, guides, and tutorials.
 
-| Service                   | Description                         | Price  |
-| ------------------------- | ----------------------------------- | ------ |
-| Full PC Check-up          | Complete system check & diagnostics | $20    |
-| OS Installation           | Windows/Linux/macOS installation    | $30    |
-| Virus & Malware Removal   | Clean system from viruses & malware | $25    |
-| Data Backup & Recovery    | Backup or recover important files   | $35    |
-| Hardware Upgrade          | SSD/HDD, RAM upgrade                | $40    |
-| Laptop/PC Troubleshooting | Fix technical issues                | $25    |
-| API Development           | REST/GraphQL API creation           | $50/hr |
-| API Integration           | Third-party API integration         | $40/hr |
-| API Documentation         | Full professional API docs          | $25    |
+### **User Roles Overview**
+
+| **User Role** | **Primary Responsibility**                     | **Core Activities**                                                                                    |
+| ------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Admin**     | Full system configuration and user management. | Create Users, Assignments, Follow-ups, Inspections, manage Locations and Master Data (Topics/Objects). |
+| **Evaluator** | On-site quality auditing and issue initiation. | Perform Inspections, create Follow-ups, add Images/Comments, assign tasks to Operators.                |
+| **Operator**  | Task execution and status updates.             | Receive tasks/Follow-ups, go to assigned locations, complete tasks, update status.                     |
+| **Manager**   | Workflow oversight and performance tracking.   | View operational status, monitor Operator progress, access dashboards.                                 |
 
 ---
 
-## 🎁 Free Services
+## 💡 Walsh Integrated Solutions Overview
 
-Special free services are available for **repeat customers**:
+Walsh Integrated offers a suite of modular SaaS products designed to support healthcare and controlled environments.
 
-- Basic device check-up
-- Small software installation
-- Data transfer assistance
-- Guidance & technical tips
-- Free tutorials support
+### **Product Suite**
 
----
-
-## 💻 Developer Tools
-
-Useful tools to boost your developer productivity.
-
-- **VS Code Extensions** — Productivity boosters
-- **Git & GitHub Workflow** — Smart version control practices
-- **Terminal Tools** — oh-my-zsh, pnpm, nvm, custom aliases
-- **Browser DevTools** — Performance audit tools
-- **API Testing Tools** — Postman, Hoppscotch
+| **Product Name**                               | **Core Functionality**                                         | **Key Benefit**                                              |
+| ---------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
+| **Walsh QA Inspector**                         | Simplifies QA cleaning inspections using mobile devices.       | Maintain records, identify issues, track worker performance. |
+| **Housekeeper Task Management System (HKTMS)** | Automates housekeeping workflows with custom checklists.       | Streamlines room cleaning logs with supervisor oversight.    |
+| **Walsh Rounds Tracker**                       | Streamlines Environment of Care (EOC) & regulatory rounds.     | Simplifies scheduling, reporting, and automated follow-ups.  |
+| **Fluorescent Plus**                           | Tracks all fluorescent marking results regardless of supplier. | Automates reminders and improves training/tracking.          |
+| **ATP Central**                                | Calculates pass/fail using OEM algorithms for all ATP brands.  | Compares ATP with visual and fluorescent programs.           |
+| **Hand Hygiene Tracker**                       | Tracks real-time hand hygiene compliance audits.               | Identifies coaching needs and improves compliance.           |
+| **Patient Satisfaction Insights**              | Captures real-time customer/staff feedback.                    | Helps improve HCAHPS/SHEP scores & resolve issues instantly. |
 
 ---
 
-## 📘 Learning
+## 📚 Need Help?
 
-- [Build Your Own X](https://github.com/pmmasud111) — Learn by creating real technologies from scratch
-- FreeCodeCamp Roadmaps
-- JavaScript & TypeScript Documentation
-- React & Next.js Official Guides
-
----
-
-## 📚 Useful Articles
-
-- [CSR vs SSR vs ISR — Deep Dive](https://dev.to/yugjadvani/csr-vs-ssr-vs-ssg-vs-isr-a-deep-dive-for-modern-web-development-33kl)
-- Web Performance Best Practices
-- REST vs GraphQL Comparison
+- **Getting Started:** Follow our _Setup Guide for New Admins_ to configure locations and users.
+- **Troubleshooting:** Visit our _Knowledge Base_ for solutions to common issues.
+- **API & Integration:** Check the _Walsh Integrated API Reference_ for custom reporting and third-party system integration.
 
 ---
 
-## 🎨 Design Library
+## 🧭 Our Mission
 
-### UI Libraries
-
-- **[Material UI](https://material-ui.com/):** Modern React components following Google Material Design
-- **[shadcn/ui](https://ui.shadcn-ui.com/):** Headless UI components with full customization
-- Tailwind CSS Components — Pre-built layouts & utility classes
-- Radix UI — Accessible, unstyled UI primitives
-
-### Design Inspiration
-
-- Color Palette Generator
-- UI Inspiration from Dribbble & Behance
-- Modern Layout Patterns
+We know that supporting our clients is critical to their success.  
+Our technology ensures your teams remain **audit-ready at all times**, reducing manual paperwork and simplifying reporting.
 
 ---
-
-## 🧱 API & Code Snippets
-
-### REST API using Express.js
-
-```javascript copy
-const express = require("express");
-const app = express();
-const PORT = 5000;
-
-app.use(express.json());
-
-app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello from API!" });
-});
-
-app.post("/api/data", (req, res) => {
-  const { name } = req.body;
-  res.json({ message: `Hello, ${name}` });
-});
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-```
