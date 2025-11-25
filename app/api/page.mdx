@@ -1,46 +1,30 @@
-# Paid Services: API Development
+---
+title: API Reference
+description: Complete API documentation for all tools and utilities.
+---
 
-We provide professional **API development, integration, and consulting services**.  
-All services are **paid**, with transparent pricing.  
-Payment can be made via **Cash** or **Card**.
+import { Callout } from "nextra/components";
+
+# API Reference
+
+Welcome to the **API Reference**.  
+Here you'll find detailed explanations of all available endpoints, parameters, and usage examples.
 
 ---
 
-## 🛠 API Services
+## 🔍 Blur Page API
 
-| Service                 | Description                                      | Price    |
-| ----------------------- | ------------------------------------------------ | -------- |
-| REST API Development    | Custom backend API for your app or website       | $50/hour |
-| GraphQL API Development | Flexible, query-based API development            | $60/hour |
-| API Integration         | Integrate third-party APIs (Payment, Maps, etc.) | $40/hour |
-| API Documentation       | Professional documentation for your API          | $25      |
-| API Testing & Debugging | Test and fix issues in existing APIs             | $30/hour |
+### **Endpoint**
 
----
+### **Description**
 
-## 🔹 Sample Code Snippets
+Blurs sensitive parts of a text, paragraph, code, or full page.
 
-### 1. REST API using Express.js
+### **Request Body**
 
-```javascript copy
-// server.js
-const express = require("express");
-const app = express();
-const PORT = 5000;
-
-// Middleware
-app.use(express.json());
-
-// Sample GET API
-app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello from API!" });
-});
-
-// Sample POST API
-app.post("/api/data", (req, res) => {
-  const { name } = req.body;
-  res.json({ message: `Hello, ${name}` });
-});
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```json
+{
+  "text": "string",
+  "blurLevel": "low | medium | high"
+}
 ```
