@@ -1,6 +1,5 @@
 export default {
   home: "Home",
-  allOverviews: "All Overviews",
   tools: "Tools",
   api: "API Reference",
   "###": {
