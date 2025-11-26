@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "type": "module",
     "next": "16.0.3",
     "nextra": "^4.6.0",
     "nextra-theme-docs": "^4.6.0",
